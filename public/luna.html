@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>LUNA</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link rel="icon" type="image/png" href="media/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="media/favicon-16x16.png" sizes="16x16" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  html,body {
+      font-family: Montserrat, sans-serif;
+      color: #111;
+        background: url(media/bg2.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: fixed;
+  }
+  *
+{
+    margin:0;padding:0;
+}
+html,body,ul
+{
+    height: 100%;
+}
+ul
+{
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+li
+{
+    text-align: center;
+    display: table-row;
+    border: none;
+}
+span
+{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+  h3, h4 {
+      /*margin: 10px 0 30px 0;*/
+      font-family: Montserrat, sans-serif;
+      letter-spacing: 10px;      
+      font-size: 30px;
+      color: #fff;
+      width: 100%;
+      padding: 10px;
+      background-color: rgba(0,0,0,0);
+  }
+  .container {
+      padding: 80px 120px;
+  }
+ 
+  .bg-1 {
+      background-color: rgba(0,0,0,0);
+      color: #bdbdbd;
+  }
+  .bg-1 h3 {color: #fff;}
+  .bg-1 p {font-style: italic;}
+  .list-group-item:first-child {
+      border-top-right-radius: 0;
+      border-top-left-radius: 0;
+  }
+  .list-group-item:last-child {
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+  }
+  .thumbnail {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+  }
+  .thumbnail p {
+      margin-top: 15px;
+      color: #555;
+  }
+  .btn {
+      padding: 10px 20px;
+      background-color: #333;
+      color: #fff;
+      border: 0px solid #fff;
+      border-radius: 20;
+      transition: .4s;
+      font-size: 11px; 
+      letter-spacing: 4px; 
+      margin: 0 auto;
+  }
+  .btn:hover, .btn:focus {
+      color: #ffffff;
+      background-color: #111;
+  } 
+  .navbar {
+      font-family: Montserrat, sans-serif;
+      margin-bottom: 0;
+      background-color: rgba(0,0,0,0);
+      border: 0;
+      color: #fff;
+      font-size: 11px !important;
+      letter-spacing: 4px;
+  }
+  .nav.navbar-nav.navbar-right li a {
+    color: #111;
+}
+  .nav.navbar-nav.navbar-right li a:hover {
+    color: #777;
+}
+  footer {
+      background-color: rgba(0,0,0,0);
+      font-family: Montserrat, sans-serif;
+      padding: 32px;
+      position: fixed;
+      bottom: 0px;
+      width: 100%;     
+      font-size: 11px; 
+      letter-spacing: 4px;
+  }
+  footer a {
+      color: white;
+      padding: 10px;
+      text-decoration: none;
+      font-size: 11px; 
+      letter-spacing: 4px;
+  }
+  footer a:hover {
+      opacity: .7;
+      color: white;
+      text-decoration: none;
+  } 
+
+  .myText {
+  	  font-family: Montserrat, sans-serif;    
+      font-size: 11px; 
+      letter-spacing: 4px;
+      outline: none;
+      font-style: normal; 
+      color: #333; 
+      padding: 20px;
+      text-decoration: none;
+  } 
+  .myText:hover {
+  	color: #fafafa;
+  	text-decoration: none;
+  }
+  .myBox{
+  	width: 100%;
+  	padding: 10px;
+  	margin: 0 auto;
+  }
+  .myIcon{
+  	margin: 10px;
+  	color: #fff;
+  }
+  .myIcon:hover{
+  	opacity: .7;
+  }
+
+  .myLogo{
+  	width: 300px;
+  	position: fixed;
+  	top: 0px;
+  	left: 0px;
+  	z-index: 1000;
+  }
+  .navbar-brand{
+  	font-size: 100px;
+  	top: 0px;
+  	line-height: 100px;
+  }
+  .myCover{
+  	width: 300px;
+  	opacity: 1;
+  }
+@media screen and (max-width: 480px) {
+  .myCover{
+  	width: 250px;
+  }
+}
+.stuff {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  text-align: center;
+  vertical-align: middle;
+  margin: auto;
+  line-height: 100%;
+}
+.musicLink{
+      color: white;
+      padding: 10px;
+      text-decoration: none;
+      font-size: 11px; 
+      letter-spacing: 4px;
+}
+.musicLink:hover {
+      opacity: .7;
+      color: white;
+      text-decoration: none;
+  } 
+  </style>
+
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+<!--   <img src="media/dude.png" style="opacity: .3" class="myLogo"> -->
+
+<!-- <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                    
+      </button>
+       <a class="navbar-brand" href="#myPage"> ☾ </a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#mystory">MY STORY</a></li>
+        <li><a href="#merch">MERCH</a></li>
+        <li><a href="#shows">SHOWS</a></li>
+        <li><a href="#news">NEWS</a></li>
+      </ul>
+    </div>
+  </div>
+</nav> -->
+
+<!-- Container  -->
+<div class="stuff">
+<ul>
+    <li><span><img src="media/love.jpg" class="myCover"></span></li>
+
+    <li><span><!-- <button class="btn w3-display-middle w3-center" style="outline: none; text-decoration: none;"> -->
+    <!-- href="https://firebasestorage.googleapis.com/v0/b/instasample-d8eea.appspot.com/o/luna%2FLean%20into%20the%20morning.zip?alt=media&token=0d39ab2c-7991-4c7b-96d1-ef7be16419b2" -->
+    <a style="color: white; padding: 10px; text-decoration: none; font-size: 11px; letter-spacing: 4px;">COMING THIS SUMMER <3
+
+    </a>
+    <!-- </button> --></span></li>
+
+    <li><span><div class="myBox">
+      <a href="https://www.soundcloud.com/luna" target="_blank" class="musicLink" target="_blank">SOUNDCLOUD</a> 
+      <a href="https://lunamakesmusic.bandcamp.com" target="_blank" class="musicLink" target="_blank">BANDCAMP</a> 
+      <br>
+      <br>
+
+    <a href="https://www.twitter.com/lunamakesmusic" target="_blank"><i class="myIcon fa fa-twitter fa-2x w3-padding-small" aria-hidden="true"></i></a>
+
+    <a href="https://www.instagram.com/nickgarver" target="_blank"><i class="myIcon fa fa-camera-retro fa-2x w3-padding-small" aria-hidden="true"></i></a>
+
+    <a href="https://www.youtube.com/channel/UCEyGLXVCIdvPSqhocr6oftA" target="_blank"><i class="myIcon fa fa-youtube-play fa-2x w3-padding-small" aria-hidden="true"></i></a>
+
+    <a href="https://www.tumblr.com/blog/nickgarver" target="_blank"><i class="myIcon fa fa-tumblr fa-2x w3-padding-small" aria-hidden="true"></i></a>
+  </div></span></li>
+    <li><span><!-- Footer -->
+<footer class="text-center">
+ <a href="mailto:contact4luna@gmail.com?Subject=Hello%20Luna">CONTACT</a>
+</footer></span></li>
+</ul>
+</div>
+
+
+</body>
+</html>
